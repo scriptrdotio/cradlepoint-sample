@@ -89,7 +89,7 @@ Monitor.prototype.getRouter = function() {
 
   var queryResponse = http.request(queryParams);
   
-  // If a response was obtained, combined returned data to router's data
+  // If a response was obtained, combine returned data to router's data
   if (queryResponse.body) {
     
     var location = JSON.parse(queryResponse.body);
