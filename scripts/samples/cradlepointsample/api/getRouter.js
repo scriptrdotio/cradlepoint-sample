@@ -13,7 +13,7 @@ var monitorModule = require("../monitor");
 
 try {
   
-  var monitor = new monitorModule.Monitor("ob-wan");
+  var monitor = new monitorModule.Monitor("YOUR_ROUTER_NAME");
   return monitor.getRouter();
 }catch(exception) {
   return exception;

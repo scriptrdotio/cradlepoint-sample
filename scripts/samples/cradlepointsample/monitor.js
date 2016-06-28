@@ -26,7 +26,7 @@ function Monitor(name) {
   }
   
   // Create principal with administrator role
-  this.principal = new principalModule.Principal({app:"scriptr", role:"administrator"});
+  this.principal = new principalModule.Principal({ecmId:"Your_ECM_ID", ecmKey:"Your_ECM_KEY"});
   
   // Instanciate a CradlepointMananger
   this.cradlepointManager = new cradlepointManagementModule.CradlepointManager({principal:this.principal});

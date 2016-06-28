@@ -15,7 +15,7 @@ var monitorModule = require("../monitor");
 
 try {
   
-  var monitor = new monitorModule.Monitor("ob-wan");
+  var monitor = new monitorModule.Monitor("YOUR_ROUTER_NAME");
   var total = monitor.geTotalMonthlyUsage(); 
   var totalBytes = total.bytesIn + total.bytesOut
     
