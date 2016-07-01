@@ -40,6 +40,7 @@
 		function locateRouter() {
        
           var xhr = new XMLHttpRequest();
+           // REPLACE THE DOMAIN IN THE BELOW URL WITH YOUR OWN DOMAIN
           xhr.open("GET", "https://iotdemos.scriptrapps.io/samples/cradlepointsample/api/getRouter");
           xhr.onload = function() {
 
@@ -69,7 +70,8 @@
 
       function parseParams() {
 		
-        if (document.location.search) {
+        if (document.location.search) {  
+        	// REPLACE THE DOMAIN IN THE BELOW URL WITH YOUR OWN DOMAIN
         	window.frames["total"].src = "https://iotdemos.scriptrapps.io/samples/cradlepointsample/view/totalusage" +  document.location.search;  
         }        
       }
@@ -86,10 +88,11 @@
           zoom: 15
         });
       }
-    </script>
+    </script> 
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBT2lgr9B0CzZSipJK9XSGllkfTUXICbQw&callback=initMap&libraries=drawing" async defer></script>
       <table align="center">
       	<tr>
+      		<!--  REPLACE THE DOMAIN IN THE BELOW URL WITH YOUR OWN DOMAIN -->
       		<td><iframe width="650px" height="600px" src="https://iotdemos.scriptrapps.io/modules/samples/cradlepoint/view/usagemetrics" frameborder="0"></iframe></td>
             <td><iframe id="total" width="600px" height="500px" src="https://iotdemos.scriptrapps.io/samples/cradlepointsample/view/totalusage" frameborder="0"></iframe></td>
         </tr>
